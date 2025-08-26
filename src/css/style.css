@@ -1,0 +1,30 @@
+.card {
+  width: 800px;
+  margin-bottom: 0;
+}
+
+.expelling-game {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.status {
+  margin-bottom: 20px;
+}
+.space {
+  width: 150px;
+  height: 150px;
+  margin: 0 15px 30px;
+  background: rgb(100, 203, 119);
+  border-radius: 50%;
+}
+
+.evil_spirit {
+  background-image: url("../img/goblin.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(255, 226, 62);
+}
