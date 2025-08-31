@@ -17,13 +17,13 @@ export default class GoblinGame {
     // Создаем игровое поле с ячейками.
     const container = document.createElement("div");
     container.classList.add("expelling-game");
-    this.mainElement.appendChild(container);
+    this.mainElement.append(container);
 
     for (let i = 1; i <= this.sizeWidth * this.sizeHeight; i++) {
       const cell = document.createElement("div");
       cell.id = `space${i}`;
       cell.classList.add("space");
-      container.appendChild(cell);
+      container.append(cell);
     }
   }
 
@@ -35,7 +35,7 @@ export default class GoblinGame {
 
     this.currentCellId = this.getRandomCellId();
     const cell = this.getCell(this.currentCellId);
-    cell.appendChild(this.character);
+    cell.append(this.character);
     this.styleCharacter(this.currentCellId);
   }
 
@@ -62,7 +62,7 @@ export default class GoblinGame {
     }
     this.currentCellId = this.getRandomCellId();
     const newCell = this.getCell(this.currentCellId);
-    newCell.appendChild(this.character);
+    newCell.append(this.character);
     this.styleCharacter(this.currentCellId);
   }
 
